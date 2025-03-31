@@ -1,6 +1,13 @@
 {
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts",
+    "start": "npm run build:live",
+    "build": "tsc -p ."
+  },
   "devDependencies": {
     "@types/node": "^22.13.14",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
 }
