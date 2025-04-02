@@ -47,4 +47,16 @@ export class Hai {
       }
     }
   }
+
+  isSuupai(): boolean {
+    return this.suit === "manzu" || this.suit === "pinzu" || this.suit === "souzu";
+  }
+
+  isJihai(): boolean {
+    return this.suit === "kazehai" || this.suit === "sangenpai";
+  }
+
+  isRoutouhai(): boolean {
+    return this.isSuupai() && (this.rank === 1 || this.rank === 9);
+  }
 }
