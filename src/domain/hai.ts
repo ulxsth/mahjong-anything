@@ -14,13 +14,13 @@ export class Hai {
   readonly suit: Suit;
   readonly rank?: Rank;
   readonly kind?: Kazehai | Sangenpai;
-  readonly isRed?: boolean;
+  readonly isRed: boolean;
 
   constructor(props: HaiProps) {
     this.suit = props.suit;
     this.rank = props.rank;
     this.kind = props.kind;
-    this.isRed = props.isRed;
+    this.isRed = props.isRed ?? false;
 
     // validate
     if (["manzu", "pinzu", "souzu"].includes(props.suit)) {
