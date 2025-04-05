@@ -30,6 +30,6 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
       - name: Install packages
-        run: npm ci
+        run: npm install
       - name: Show coverage
         run: npm test -- --bail --maxWorkers=100% --watchAll=false --coverage
