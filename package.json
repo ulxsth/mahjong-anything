@@ -1,4 +1,10 @@
 {
+  "name": "mahjong-anything",
+  "module": "index.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts",
     "start": "npm run build:live",
@@ -10,8 +16,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
     "@types/bun": "latest"
-  },
-  "name": "mahjong-anything",
-  "module": "index.ts",
-  "type": "module"
+  }
 }
